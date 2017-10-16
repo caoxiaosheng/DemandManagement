@@ -1,0 +1,22 @@
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="section">
+      <view class="section__title">发生问题的版本</view>
+      <input name="versionOfOccurrence"/>
+    </view>
+    <view class="section">
+      <view class="section__title">客户名称</view>
+      <input name="customer" />
+    </view>
+    <view class="section">
+      <view class="section__title">问题详细描述</view>
+      <input name="problemDetail"/>
+    </view>
+    <view class="section">
+      <view class="section__title">提交人</view>
+      <input name="submitter" />
+    </view>
+    <view class="btn-area">
+      <button formType="submit">Submit</button>
+      <button formType="reset">Reset</button>
+    </view>
+  </form>

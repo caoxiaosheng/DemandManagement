@@ -1,12 +1,36 @@
 {
   "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/problems/problems",
+    "pages/submit/submit"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "问题单",
     "navigationBarTextStyle":"black"
-  }
+  },
+  "tabBar": {
+    "color": "#2c2c2c",
+    "selectedColor": "#3cc51f",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/problems/problems",
+        "text": "问题单",
+        "iconPath":"images/problem.png",
+        "selectedIconPath":"images/problemhl.png"
+      },
+      {
+        "pagePath": "pages/submit/submit",
+        "text": "提交问题",
+        "iconPath": "images/submit.png",
+        "selectedIconPath": "images/submithl.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
 }
