@@ -1,0 +1,77 @@
+<template name="unreviewed">
+  <view class="kind-list__item">
+    <view class="weui-flex kind-list__item-hd ">
+      <view class="weui-flex__item" style="color:#f9bdbb">未审核</view>
+      <label>成都光电啊啊啊啊啊</label>
+    </view>
+    <view class="page__desc problem_detail">没有了音乐就退化耳朵没有了戒律就灭掉烛火 像回到 误解照相术的年代 你摄取我的灵魂 没有了剃刀就封锁语言 没有了心脏却活了九年
+    </view>
+  </view>
+</template>
+
+<template name="refused">
+  <view class="kind-list__item">
+    <view class="weui-flex kind-list__item-hd ">
+      <view class="weui-flex__item" style="color:#e51c23">拒绝</view>
+      <label>四川广电哈哈哈哈哈</label>
+    </view>
+    <view class="page__desc problem_detail">山 是山的影子 狗 懒得进化 夏天 人的酶很固执 灵魂的酶像荷花
+    </view>
+  </view>
+</template>
+
+<template name="planned">
+  <view class="kind-list__item">
+    <view class="weui-flex kind-list__item-hd ">
+      <view class="weui-flex__item" style="color:#cddc39">计划中</view>
+      <label>嘉定广电哈哈哈哈哈</label>
+    </view>
+    <view class="kind-list__item-bd kind-list__item-bd_show">
+      <view class="weui-cells weui-cells_show">
+        <view class="weui-cell weui-cell_access weui-flex">
+          <view class="weui-cell__bd">软件版本</view>
+          <view class="weui-cell__bd">v3.3.0.0</view>
+        </view>
+        <view class="weui-cell weui-cell_access weui-flex">
+          <view class="weui-cell__bd">预计完成时间</view>
+          <view class="weui-cell__bd">2017/10/19</view>
+        </view>
+      </view>
+    </view>
+    <view class="page__desc problem_detail">许多夜晚重叠 悄然形成黑暗 玫瑰吸收光芒 大地按捺清香 为了寻找你 我搬进鸟的眼睛 经常盯着路过的风
+    </view>
+  </view>
+</template>
+
+<template name="done">
+  <view class="kind-list__item">
+    <view class="weui-flex kind-list__item-hd ">
+      <view class="weui-flex__item" style="color:#259b24">已完成</view>
+      <label>江苏广电嚯嚯嚯嚯</label>
+    </view>
+    <view class="kind-list__item-bd kind-list__item-bd_show">
+      <view class="weui-cells weui-cells_show">
+        <view class="weui-cell weui-cell_access weui-flex">
+          <view class="weui-cell__bd">软件版本</view>
+          <view class="weui-cell__bd">v3.3.0.0</view>
+        </view>
+        <view class="weui-cell weui-cell_access weui-flex">
+          <view class="weui-cell__bd">发布时间</view>
+          <view class="weui-cell__bd">2017/10/19</view>
+        </view>
+      </view>
+    </view>
+    <view class="page__desc problem_detail">冬天是十一月 十二月 一月 二月 三月 四月 当我的光曝在你身上 重逢就是一间暗室
+    </view>
+  </view>
+</template>
+
+
+<view class="page__bd page__bd_spacing">
+  <view class="kind-list">
+    <template is='unreviewed' />
+    <template is='refused' />
+    <template is='planned' />
+    <template is='done' />
+  </view>
+</view>

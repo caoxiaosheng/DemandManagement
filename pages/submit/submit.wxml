@@ -1,11 +1,11 @@
 <view class="page">
   <view class="page__bd">
-    <form bindsubmit="formSubmit" bindreset="formReset">
+    <form bindsubmit="formSubmit">
       <view class="weui-cells__title">发生问题的版本</view>
       <view class="weui-cells weui-cells_after-title">
         <view class="weui-cell weui-cell_input">
           <view class="weui-cell__bd">
-            <input class="weui-input" name="versionOfOccurrence" />
+            <input class="weui-input" name="versionOfOccurrence" value='{{clearValue}}'/>
           </view>
         </view>
       </view>
@@ -13,7 +13,7 @@
       <view class="weui-cells weui-cells_after-title">
         <view class="weui-cell weui-cell_input">
           <view class="weui-cell__bd">
-            <input class="weui-input" name="customer" />
+            <input class="weui-input" name="customer" value='{{clearValue}}'/>
           </view>
         </view>
       </view>
@@ -21,7 +21,7 @@
       <view class="weui-cells weui-cells_after-title">
         <view class="weui-cell weui-cell_input">
           <view class="weui-cell__bd">
-            <input class="weui-input" name="versionOfOccurrence" />
+            <input class="weui-input" name="versionOfOccurrence" value='{{clearValue}}'/>
           </view>
         </view>
       </view>
@@ -29,7 +29,7 @@
       <view class="weui-cells weui-cells_after-title">
         <view class="weui-cell">
           <view class="weui-cell__bd">
-            <textarea class="weui-textarea" name="problemDetail" style="height: 5em" />
+            <textarea class="weui-textarea" name="problemDetail" style="height: 5em" value='{{clearValue}}'/>
             <view class="weui-textarea-counter">0/1000</view>
           </view>
         </view>
@@ -38,13 +38,13 @@
       <view class="weui-cells weui-cells_after-title">
         <view class="weui-cell weui-cell_input">
           <view class="weui-cell__bd">
-            <input class="weui-input" name="submitter" />
+            <input class="weui-input" name="submitter" value='{{clearValue}}'/>
           </view>
         </view>
       </view>
       <view class="weui-btn-area">
         <button class="weui-btn" formType="submit" type="primary">提交</button>
-        <button class="weui-btn" formType="reset" type="default">重置</button>
+        <button class="weui-btn" type="default" bindtap='onReset'>重置</button>
       </view>
     </form>
   </view>
