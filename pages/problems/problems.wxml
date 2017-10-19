@@ -6,6 +6,7 @@
     </view>
     <view class="page__desc problem_detail">没有了音乐就退化耳朵没有了戒律就灭掉烛火 像回到 误解照相术的年代 你摄取我的灵魂 没有了剃刀就封锁语言 没有了心脏却活了九年
     </view>
+    <view class="submit_time">2017年10月20日01点25分</view>
   </view>
 </template>
 
@@ -17,6 +18,7 @@
     </view>
     <view class="page__desc problem_detail">山 是山的影子 狗 懒得进化 夏天 人的酶很固执 灵魂的酶像荷花
     </view>
+    <view class="submit_time">2017年10月20日01点25分</view>
   </view>
 </template>
 
@@ -40,6 +42,7 @@
     </view>
     <view class="page__desc problem_detail">许多夜晚重叠 悄然形成黑暗 玫瑰吸收光芒 大地按捺清香 为了寻找你 我搬进鸟的眼睛 经常盯着路过的风
     </view>
+    <view class="submit_time">2017年10月20日01点25分</view>
   </view>
 </template>
 
@@ -63,6 +66,7 @@
     </view>
     <view class="page__desc problem_detail">冬天是十一月 十二月 一月 二月 三月 四月 当我的光曝在你身上 重逢就是一间暗室
     </view>
+    <view class="submit_time">2017年10月20日01点25分</view>
   </view>
 </template>
 

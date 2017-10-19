@@ -25,11 +25,17 @@
 
 .weui-cell:before {
   right: 15px;
+  border-top:0rpx;
 }
 
 .weui-cell{
-  padding-left: 20px;
-  font-size: 15px;
+  padding: 5px 20px 0px;
+  font-size: 14px;
+}
+
+
+.weui-cell > .weui-cell__bd:last-child{
+  text-align: right;
 }
 
 .kind-list__item {
@@ -40,7 +46,7 @@
 }
 
 .kind-list__item:first-child {
-  margin-top: 0;
+  margin-top: 0px;
 }
 
 .kind-list__img {
@@ -50,6 +56,7 @@
 
 .kind-list__item-hd {
   padding: 20px;
+  padding-bottom:0px;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
 }
@@ -68,7 +75,12 @@
 }
 
 .problem_detail {
-  padding: 20px;
-  padding-top: 0px;
+  padding: 0px 20px;
+}
+
+.submit_time{
+  font-size: 8px;
+  padding-right: 20px;
+  text-align: right;
 }
 
