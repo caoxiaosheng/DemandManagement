@@ -21,6 +21,12 @@
         "selectedIconPath":"images/problemhl.png"
       },
       {
+        "pagePath": "pages/problems/problems",
+        "text": "待评价",
+        "iconPath": "images/comment.png",
+        "selectedIconPath": "images/commenthl.png"
+      },
+      {
         "pagePath": "pages/submit/submit",
         "text": "提交问题",
         "iconPath": "images/submit.png",
