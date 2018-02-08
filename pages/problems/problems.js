@@ -1,3 +1,7 @@
+const util = require('../../utils/util.js')
+const getActiveDemandsUrl = require('../../config').getActiveDemandsUrl
+const app = getApp()
+
 // pages/problems/problems.js
 Page({
 
@@ -34,7 +38,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+    util.requestWithJWT(getActiveDemandsUrl, null, 'GET', createProblems);
   },
 
   /**
@@ -71,6 +75,8 @@ Page({
   onShareAppMessage: function () {
   
   }
-
-
 })
+
+function createProblems(res) {
+console.log(res);
+}

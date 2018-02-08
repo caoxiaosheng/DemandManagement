@@ -1,7 +1,8 @@
 {
   "pages":[
     "pages/problems/problems",
-    "pages/submit/submit"
+    "pages/submit/submit",
+    "pages/logs/logs"
   ],
   "window":{
     "navigationBarBackgroundColor": "#f8f8f8",
