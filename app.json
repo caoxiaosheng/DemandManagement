@@ -2,11 +2,12 @@
   "pages":[
     "pages/problems/problems",
     "pages/submit/submit",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/bind/bind"
   ],
   "window":{
     "navigationBarBackgroundColor": "#f8f8f8",
-    "navigationBarTitleText": "问题单",
+    "navigationBarTitleText": "需求列表",
     "navigationBarTextStyle":"black",
     "backgroundColor":"#f8f8f8"
   },
@@ -17,7 +18,7 @@
     "list": [
       {
         "pagePath": "pages/problems/problems",
-        "text": "问题单",
+        "text": "需求列表",
         "iconPath":"images/problem.png",
         "selectedIconPath":"images/problemhl.png"
       },
@@ -29,7 +30,7 @@
       },
       {
         "pagePath": "pages/submit/submit",
-        "text": "提交问题",
+        "text": "提交需求",
         "iconPath": "images/submit.png",
         "selectedIconPath": "images/submithl.png"
       }

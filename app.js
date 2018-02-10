@@ -15,9 +15,9 @@ App({
             code: res.code
           },
           success: res=> {
-            if (!res.data) {
+            if (res.data.result===false) {
               wx.navigateTo({
-                url: '../logs/logs'
+                url: '../bind/bind'
               })
             } else {
               this.globalData.token = res.data.access_token;

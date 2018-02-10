@@ -39,7 +39,7 @@ function myrequest(url, data, method, successHandler) {
         successHandler(res);
       } else {
         wx.showToast({
-          title: 'res.statusCode',
+          title: res.statusCode,
           icon: 'none',
           duration: 2000
         })
