@@ -55,14 +55,14 @@ Page({
           title: '成功',
           icon: 'success',
           duration: 2000
-        })
+        });
         var tempIndex = that.data.userNames.indexOf(app.globalData.userName);
         that.setData({
           clearValue: "",
           demandTypeIndex: 0,
           userIndex: tempIndex,
           customerIndex: 0
-        })
+        });
       }else{
         wx.showToast({
           title: res.data.reason,

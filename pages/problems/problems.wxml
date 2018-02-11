@@ -1,12 +1,11 @@
-<template name="unreviewed">
+<template name="newdemand">
   <view class="kind-list__item">
     <view class="weui-flex kind-list__item-hd ">
-      <view class="weui-flex__item" style="color:#f9bdbb">未审核</view>
-      <label>成都光电啊啊啊啊啊</label>
+      <view class="weui-flex__item" style="color:#9e9e9e">{{demandPhase}}</view>
+      <label>{{customer}}</label>
     </view>
-    <view class="page__desc problem_detail">没有了音乐就退化耳朵没有了戒律就灭掉烛火 像回到 误解照相术的年代 你摄取我的灵魂 没有了剃刀就封锁语言 没有了心脏却活了九年
-    </view>
-    <view class="submit_time">2017年10月20日01点25分</view>
+    <view class="page__desc problem_detail">{{demandDetail}}</view>
+    <view class="submit_time">{{createTime}}</view>
   </view>
 </template>
 
@@ -25,24 +24,46 @@
 <template name="planned">
   <view class="kind-list__item">
     <view class="weui-flex kind-list__item-hd ">
-      <view class="weui-flex__item" style="color:#cddc39">计划中</view>
-      <label>嘉定广电哈哈哈哈哈</label>
+      <view class="weui-flex__item" style="color:#cddc39">{{demandPhase}}</view>
+      <label>{{customer}}</label>
     </view>
     <view class="kind-list__item-bd kind-list__item-bd_show">
       <view class="weui-cells weui-cells_show">
         <view class="weui-cell weui-cell_access weui-flex">
           <view class="weui-cell__bd">软件版本</view>
-          <view class="weui-cell__bd">v3.3.0.0</view>
+          <view class="weui-cell__bd">{{softwareVersion}}</view>
         </view>
         <view class="weui-cell weui-cell_access weui-flex">
           <view class="weui-cell__bd">预计完成时间</view>
-          <view class="weui-cell__bd">2017/10/19</view>
+          <view class="weui-cell__bd">{{releaseDate}}</view>
         </view>
       </view>
     </view>
-    <view class="page__desc problem_detail">许多夜晚重叠 悄然形成黑暗 玫瑰吸收光芒 大地按捺清香 为了寻找你 我搬进鸟的眼睛 经常盯着路过的风
+    <view class="page__desc problem_detail">{{demandDetail}}</view>
+    <view class="submit_time">{{createTime}}</view>
+  </view>
+</template>
+
+<template name="working">
+  <view class="kind-list__item">
+    <view class="weui-flex kind-list__item-hd ">
+      <view class="weui-flex__item" style="color:#8bc34a">{{demandPhase}}</view>
+      <label>{{customer}}</label>
     </view>
-    <view class="submit_time">2017年10月20日01点25分</view>
+    <view class="kind-list__item-bd kind-list__item-bd_show">
+      <view class="weui-cells weui-cells_show">
+        <view class="weui-cell weui-cell_access weui-flex">
+          <view class="weui-cell__bd">软件版本</view>
+          <view class="weui-cell__bd">{{softwareVersion}}</view>
+        </view>
+        <view class="weui-cell weui-cell_access weui-flex">
+          <view class="weui-cell__bd">预计完成时间</view>
+          <view class="weui-cell__bd">{{releaseDate}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="page__desc problem_detail">{{demandDetail}}</view>
+    <view class="submit_time">{{createTime}}</view>
   </view>
 </template>
 
@@ -73,9 +94,8 @@
 
 <view class="page__bd page__bd_spacing">
   <view class="kind-list">
-    <template is='unreviewed' />
-    <template is='refused' />
-    <template is='planned' />
-    <template is='done' />
+    <block wx:for="{{demands}}">
+      <template is="{{(item.demandPhase==='需求提出'|| item.demandPhase==='需求分析')? 'newdemand' : (item.demandPhase==='版本计划'?'planned':'working')}}" data="{{...item}}" />
+    </block>
   </view>
 </view>

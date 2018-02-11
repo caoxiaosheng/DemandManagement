@@ -9,15 +9,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    objectArray: [
-      { id: 5, unique: 'unique_5' },
-      { id: 4, unique: 'unique_4' },
-      { id: 3, unique: 'unique_3' },
-      { id: 2, unique: 'unique_2' },
-      { id: 1, unique: 'unique_1' },
-      { id: 0, unique: 'unique_0' },
-    ],
-    numberArray: [1, 2, 3, 4]
+    demands:[]
   },
 
   /**
@@ -38,7 +30,10 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    util.requestWithJWT(getActiveDemandsUrl, null, 'GET', createProblems);
+    var that=this;
+    util.requestWithJWT(getActiveDemandsUrl, null, 'GET', res=>{
+      that.setData({ demands:res.data.demands});
+    });
   },
 
   /**
@@ -76,7 +71,3 @@ Page({
   
   }
 })
-
-function createProblems(res) {
-console.log(res);
-}
