@@ -3,7 +3,8 @@ const loginUrl = require('./config').loginUrl
 
 App({
   globalData: {
-    token: null
+    token: null,
+    userName:""
   },
   onLaunch: function () {
     wx.login({
@@ -21,6 +22,7 @@ App({
               })
             } else {
               this.globalData.token = res.data.access_token;
+              this.globalData.userName = res.data.userName;
               // 由于网络请求，可能会在 Page.onLoad 之后才返回
               // 所以此处加入 callback 以防止这种情况
               if (this.userInfoReadyCallback) {

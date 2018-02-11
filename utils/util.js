@@ -26,10 +26,10 @@ function requestWithJWT(url, data, method, successHandler){
   }
 }
 
-function myrequest(url, data, method, successHandler) {
+function myrequest(url, postdata, method, successHandler) {
   wx.request({
     url: url,
-    data: data,
+    data: postdata,
     method: method,
     header: {
       'Authorization': 'Bearer ' + app.globalData.token // 默认值
@@ -39,7 +39,7 @@ function myrequest(url, data, method, successHandler) {
         successHandler(res);
       } else {
         wx.showToast({
-          title: res.statusCode,
+          title: res.statusCode.toString(),
           icon: 'none',
           duration: 2000
         })

@@ -1,4 +1,5 @@
 const bindUrl = require('../../config').bindUrl
+const app = getApp()
 
 Page({
 
@@ -28,6 +29,8 @@ Page({
                 duration: 2000
               })
             } else {
+              app.globalData.token = res.data.access_token;
+              app.globalData.userName = res.data.userName;
               wx.switchTab({
                 url: '../problems/problems'
               })
