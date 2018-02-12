@@ -1,0 +1,28 @@
+<view class="page">
+  <view class="page__bd">
+    <view class="weui-cells__title">需求编号</view>
+    <view class='weui-cells__tips'>{{demand.demandCode}}</view>
+    <view class="weui-cells__title">需求类别</view>
+    <view class='weui-cells__tips'>{{demand.demandType}}</view>
+    <view class="weui-cells__title">需求描述</view>
+    <view class='weui-cells__tips'>{{demand.demandDetail}}</view>
+    <view class="weui-cells__title">提出人</view>
+    <view class='weui-cells__tips'>{{demand.user}}</view>
+    <view class="weui-cells__title">相关客户</view>
+    <view class='weui-cells__tips'>{{demand.customer}}</view>
+    <view class="weui-cells__title">提出时间</view>
+    <view class='weui-cells__tips'>{{demand.createTime}}</view>
+    <view class="weui-cells__title">当前阶段</view>
+    <view class='weui-cells__tips'>{{demand.demandPhase}}</view>
+    <view class="weui-cells__title">需求对齐</view>
+    <view class='weui-cells__tips'>{{demand.alignRecords}}</view>
+    <view class="weui-cells__title">需求分析</view>
+    <view class='weui-cells__tips'>{{demand.analyseRecords}}</view>
+    <view class="weui-cells__title">版本计划</view>
+    <view class='weui-cells__tips'>{{demand.softwareVersion}}</view>
+    <view class="weui-cells__title">发布时间</view>
+    <view class='weui-cells__tips'>{{demand.releaseDate}}</view>
+    <view class="weui-cells__title">备注</view>
+    <view class='weui-cells__tips'>{{demand.remarks}}</view>
+  </view>
+</view>

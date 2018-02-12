@@ -1,0 +1,4 @@
+/* pages/demand/demand.wxss */
+.weui-cells__tips{
+  color:black
+}

@@ -1,30 +1,49 @@
+// pages/enddemands/enddemands.js
 const util = require('../../utils/util.js')
-const getActiveDemandsUrl = require('../../config').getActiveDemandsUrl
+const getEndDemandsUrl = require('../../config').getEndDemandsUrl
 const app = getApp()
 
-// pages/problems/problems.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    demands:[]
+    demands: [],
+    hiddenmodalput:true
   },
 
-  tapDemand:function(event){
-    var demand=null;
-    for(var i=0;i<this.data.demands.length;i++){
-      if (this.data.demands[i].id === event.currentTarget.dataset.demandId){
+  tapDemand: function (event) {
+    var demand = null;
+    for (var i = 0; i < this.data.demands.length; i++) {
+      if (this.data.demands[i].id === event.currentTarget.dataset.demandId) {
         demand = this.data.demands[i];
         break;
       }
     }
-    if(demand!==null){
+    if (demand !== null) {
       wx.navigateTo({
         url: '../demand/demand?demand=' + JSON.stringify(demand),
       })
     }
+  },
+
+  pressComment:function(event){
+    this.setData({
+      hiddenmodalput: false
+    })  
+  },
+
+  cancel: function () {
+    this.setData({
+      hiddenmodalput: true
+    });
+  },
+  
+  confirm: function () {
+    this.setData({
+      hiddenmodalput: true
+    })
   },
 
   /**
@@ -45,9 +64,9 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    var that=this;
-    util.requestWithJWT(getActiveDemandsUrl, null, 'GET', res=>{
-      that.setData({ demands:res.data.demands});
+    var that = this;
+    util.requestWithJWT(getEndDemandsUrl, null, 'GET', res => {
+      that.setData({ demands: res.data.demands });
     });
   },
 

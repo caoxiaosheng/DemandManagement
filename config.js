@@ -1,12 +1,13 @@
-var host ="localhost:13588";
+var host ="uwant.top";
 
 var config={
-  loginUrl: `http://${host}/api/login`,
-  bindUrl: `http://${host}/api/bind`,
-  getActiveDemandsUrl: `http://${host}/api/getactivedemands`,
-  getAllUsersUrl: `http://${host}/api/getallusers`,
-  getAllCustomersUrl: `http://${host}/api/getallcustomers`,
-  addDemandUrl: `http://${host}/api/adddemand`,
+  loginUrl: `https://${host}/api/login`,
+  bindUrl: `https://${host}/api/bind`,
+  getActiveDemandsUrl: `https://${host}/api/getactivedemands`,
+  getEndDemandsUrl: `https://${host}/api/getenddemands`,
+  getAllUsersUrl: `https://${host}/api/getallusers`,
+  getAllCustomersUrl: `https://${host}/api/getallcustomers`,
+  addDemandUrl: `https://${host}/api/adddemand`,
 }
 
 module.exports = config

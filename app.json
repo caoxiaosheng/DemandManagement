@@ -1,9 +1,11 @@
 {
   "pages":[
     "pages/problems/problems",
+    "pages/enddemands/enddemands",
     "pages/submit/submit",
     "pages/logs/logs",
-    "pages/bind/bind"
+    "pages/bind/bind",
+    "pages/demand/demand"
   ],
   "window":{
     "navigationBarBackgroundColor": "#f8f8f8",
@@ -23,7 +25,7 @@
         "selectedIconPath":"images/problemhl.png"
       },
       {
-        "pagePath": "pages/problems/problems",
+        "pagePath": "pages/enddemands/enddemands",
         "text": "待评价",
         "iconPath": "images/comment.png",
         "selectedIconPath": "images/commenthl.png"
