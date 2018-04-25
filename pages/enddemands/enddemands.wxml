@@ -64,5 +64,5 @@
   </view>
 </view>
 <modal hidden="{{hiddenmodalput}}" title="请输入反馈" confirm-text="提交" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">  
-    <input type='text'placeholder="请输入内容" auto-focus/>  
-</modal>  
+    <input type='text' placeholder="请输入内容" value="{{comment}}"/>  
+</modal>

@@ -10,7 +10,8 @@ Page({
    */
   data: {
     demands: [],
-    hiddenmodalput:true
+    hiddenmodalput:true,
+    comment:''
   },
 
   tapDemand: function (event) {
@@ -30,7 +31,8 @@ Page({
 
   pressComment:function(event){
     this.setData({
-      hiddenmodalput: false
+      hiddenmodalput: false,
+      comment:''
     })  
   },
 
