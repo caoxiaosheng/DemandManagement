@@ -18,7 +18,7 @@ App({
           success: res=> {
             if (res.data.result===false) {
               wx.navigateTo({
-                url: '../bind/bind'
+                url: '/pages/bind/bind'
               })
             } else {
               this.globalData.token = res.data.access_token;
